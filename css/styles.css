@@ -11,7 +11,7 @@
   margin: 0;
 }
 body {
-  background-color: var(--main-white-color);
+  background-color: #f5f5f5;
   font-family: "Roboto", sans-serif;
   color: var(--main-text-black-color);
 }
@@ -205,7 +205,26 @@ button {
   display: flex;
   gap: 30px;
 }
-.what__we__do__list__item {
+/* -=-=-=-=-=-=- OUR TEAM -=-=-=-=-=-=-  */
+.our__team {
+  background: #f5f4fa;
+}
+.our__team__header {
+  margin-bottom: 50px;
+}
+.our__team__list {
+  display: flex;
+  gap: 30px;
+}
+.our__team__list__item {
+  padding-bottom: 30px;
+  background: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+.our__team__list__item__portrait {
+  margin-bottom: 30px;
 }
 .section-block-header {
   font-size: 36px;
@@ -228,11 +247,12 @@ button {
   color: var(--main-grey-color);
 }
 
-.team-member-name {
+.our__team__list__item__name {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
+  margin-bottom: 10px;
 }
 
 .team-member-position {
