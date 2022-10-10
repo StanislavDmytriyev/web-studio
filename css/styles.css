@@ -202,6 +202,7 @@ button {
   padding-top: 0;
 }
 .what__we__do__list {
+  margin-top: 50px;
   display: flex;
   gap: 30px;
 }
@@ -279,7 +280,7 @@ button {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  row-gap: 30px;
+  gap: 30px;
 }
 .portfolio__list__item {
   background: #ffffff;
