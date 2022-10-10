@@ -282,7 +282,11 @@ button {
   row-gap: 30px;
 }
 .portfolio__list__item {
-  padding-bottom: 20px;
+  background: #ffffff;
+  border: 1px solid #eeeeee;
+}
+.portfolio__list__item__description {
+  padding: 20px 24px;
 }
 .portolio__filters__button {
   background-color: #f5f4fa;
@@ -300,9 +304,6 @@ button {
   color: var(--main-white-color);
 }
 
-.portolio__list__item__picture {
-  margin-bottom: 20px;
-}
 .portfolio__list__item__project__name {
   font-size: 18px;
   line-height: 2;
