@@ -158,6 +158,8 @@ button {
 /* -=-=-=-=-=-=- INDEX HERO -=-=-=-=-=-=-  */
 .hero__section {
   background-color: var(--dark-background-color);
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 
 .hero-slogan {
@@ -171,7 +173,7 @@ button {
   color: var(--main-white-color);
 }
 
-.hero-order-service {
+.hero__order__service {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 16px;
@@ -179,6 +181,11 @@ button {
   letter-spacing: 0.06em;
   color: var(--main-white-color);
   background-color: var(--accent-color);
+  display: block;
+  margin: 30px auto 0 auto;
+  padding: 10px 32px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
 }
 
 .section-block-header {
