@@ -188,6 +188,25 @@ button {
   border-radius: 4px;
 }
 
+/* -=-=-=-=-=-=- ADVANTAGES -=-=-=-=-=-=-  */
+.advantages__list {
+  display: flex;
+  gap: 30px;
+}
+.advantages__list__item {
+  max-width: 270px;
+}
+
+/* -=-=-=-=-=-=- WHAT WE DO -=-=-=-=-=-=-  */
+.section.what__we__do {
+  padding-top: 0;
+}
+.what__we__do__list {
+  display: flex;
+  gap: 30px;
+}
+.what__we__do__list__item {
+}
 .section-block-header {
   font-size: 36px;
   line-height: 1.17;
