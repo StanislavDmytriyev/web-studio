@@ -220,7 +220,8 @@ button {
   gap: 30px;
 }
 .advantages__list__item {
-  max-width: 270px;
+  width: calc((100% - 90px) / 3);
+  /* max-width: 270px; */
 }
 
 /* -=-=-=-=-=-=- WHAT WE DO -=-=-=-=-=-=-  */
@@ -261,14 +262,16 @@ button {
   letter-spacing: 0.03em;
 }
 
-.section-sub-header {
+.advantages__list__header {
+  margin-bottom: 10px;
+  display: block;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
 
-.feature-description {
+.advantages__description {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
