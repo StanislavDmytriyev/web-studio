@@ -155,6 +155,50 @@ button {
 
 /* -=-=-=-=-=-=- INDEX HERO -=-=-=-=-=-=-  */
 .hero__section {
+  color: var(--accent-color);
+}
+
+/* -=-=-=-=-=-=- FOOTER -=-=-=-=-=-=-  */
+.footer {
+  background-color: var(--dark-background-color);
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+.footer > div {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.footer__address__list {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 9px;
+}
+.footer__address__list > li {
+  height: 21px;
+}
+.footer__address {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--main-white-color);
+}
+.footer__contacts {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--footer-text-semi-transparent-color);
+}
+.footer__address:hover,
+.footer__contacts:hover,
+.footer__contacts:focus {
+  color: var(--accent-color);
+}
+
+/* -=-=-=-=-=-=- INDEX HERO -=-=-=-=-=-=-  */
+.hero__section {
   background-color: var(--dark-background-color);
   padding-top: 200px;
   padding-bottom: 200px;
@@ -200,9 +244,10 @@ button {
   padding-top: 0;
 }
 .what__we__do__list {
-  margin-top: 50px;
+margin-top: 50px;
   display: flex;
   gap: 30px;
+  
 }
 /* -=-=-=-=-=-=- OUR TEAM -=-=-=-=-=-=-  */
 .our__team {
@@ -275,7 +320,7 @@ button {
   margin-bottom: 50px;
 }
 .portfolio__list {
-  display: flex;
+ display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   gap: 30px;
