@@ -121,10 +121,8 @@ button {
 /* -=-=-=-=-=-=- FOOTER -=-=-=-=-=-=-  */
 .footer {
   background-color: var(--dark-background-color);
-}
-.footer > div {
-  padding-top: 60px;
   padding-bottom: 60px;
+  padding-top: 60px;
 }
 .footer__address__list {
   margin-top: 20px;
@@ -133,7 +131,7 @@ button {
   row-gap: 9px;
 }
 .footer__address__list > li {
-  height: 21px;
+  min-height: 21px;
 }
 .footer__address {
   font-style: normal;
