@@ -221,7 +221,22 @@ button {
 }
 .advantages__list__item {
   width: calc((100% - 90px) / 3);
-  /* max-width: 270px; */
+}
+
+.advantages__list__header {
+  margin-bottom: 10px;
+  display: block;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.advantages__description {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--main-grey-color);
 }
 
 /* -=-=-=-=-=-=- WHAT WE DO -=-=-=-=-=-=-  */
@@ -260,22 +275,6 @@ button {
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
-}
-
-.advantages__list__header {
-  margin-bottom: 10px;
-  display: block;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-}
-
-.advantages__description {
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-  color: var(--main-grey-color);
 }
 
 .our__team__list__item__name {
