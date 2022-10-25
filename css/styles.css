@@ -6,6 +6,7 @@
   --dark-background-color: #2f303a;
   --button-filter-background-color: #f5f4fa;
   --footer-text-semi-transparent-color: rgba(255, 255, 255, 0.6);
+  --grey-icons-color: #afb1b8;
 }
 
 /* Global Styles */
@@ -392,7 +393,7 @@ button {
 }
 .our__team .socials__link {
   background: none;
-  color: #afb1b8;
+  color: var(--grey-icons-color);
 }
 
 .our__team .socials__link:hover,
@@ -405,6 +406,40 @@ button {
   fill: currentColor;
 }
 
+/* -=-=-=-=-=-=- OUR CLIENTS -=-=-=-=-=-=-  */
+.our__clients.section {
+  padding-top: 38px;
+}
+
+.clients__list {
+  margin-top: 50px;
+  display: flex;
+  gap: 30px;
+}
+
+.clients__list__item {
+}
+
+.clients__list__link {
+  display: flex;
+  color: var(--grey-icons-color);
+  border: 1px solid currentColor;
+  border-radius: 4px;
+  width: 170px;
+  height: 92px;
+  justify-content: center;
+  align-items: center;
+}
+
+.clients__list__link:hover,
+.clients__list__link:focus {
+  color: var(--accent-color);
+}
+
+.clients__list__icon {
+  fill: currentColor;
+  height: 120%;
+}
 /* -=-=-=-=-=-=- Portfolio CSS -=-=-=-=-=-=- */
 /* -=-=-=-=-=-=- Portfolio CSS -=-=-=-=-=-=- */
 /* -=-=-=-=-=-=- Portfolio CSS -=-=-=-=-=-=- */
