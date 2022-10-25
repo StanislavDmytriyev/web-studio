@@ -196,7 +196,7 @@ button {
 /* -=-=-=-=-=-=- INDEX HERO -=-=-=-=-=-=-  */
 .hero__section {
   min-height: 600px;
-  width: 1600px;
+  max-width: 1600px;
   padding-top: 200px;
   padding-bottom: 200px;
   margin-left: auto;
@@ -209,6 +209,7 @@ button {
     ),
     url(../images/hero.jpg);
   background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .hero-slogan {
@@ -260,6 +261,33 @@ button {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--main-grey-color);
+}
+
+.pseudo__element::before {
+  content: "";
+  display: block;
+  height: 120px;
+  background-color: #f5f4fa;
+  margin-bottom: 30px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 26%;
+}
+
+.antenna::before {
+  background-image: url(../images/svg/features-antenna.svg);
+}
+
+.clock::before {
+  background-image: url(../images/svg/features-clock.svg);
+}
+
+.diagram::before {
+  background-image: url(../images/svg/features-diagram.svg);
+}
+
+.astronaut::before {
+  background-image: url(../images/svg/features-astronaut.svg);
 }
 
 /* -=-=-=-=-=-=- WHAT WE DO -=-=-=-=-=-=-  */
