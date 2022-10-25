@@ -83,6 +83,9 @@ button {
 /* -=-=-=-=-=-=- HEADER -=-=-=-=-=-=-  */
 .header {
   border-bottom: 1px solid #ececec;
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .header__main__nav {
@@ -164,6 +167,36 @@ button {
   padding-bottom: 60px;
 }
 
+.footer > .container {
+  display: flex;
+  gap: 70px;
+}
+
+.socials__list {
+  display: flex;
+  gap: 10px;
+}
+
+.social__icon {
+  fill: white;
+}
+
+.socials__link {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  justify-content: center;
+  align-items: center;
+}
+
+.socials__link:hover,
+.socials__link:focus {
+  background-color: var(--accent-color);
+  outline: none;
+}
+
 .footer__address__list {
   margin-top: 20px;
   display: flex;
@@ -191,6 +224,16 @@ button {
 .footer__contacts:hover,
 .footer__contacts:focus {
   color: var(--accent-color);
+}
+
+.footer__join__us {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-bottom: 20px;
 }
 
 /* -=-=-=-=-=-=- INDEX HERO -=-=-=-=-=-=-  */
@@ -341,6 +384,25 @@ button {
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--main-grey-color);
+}
+
+.our__team .socials__list {
+  margin-top: 16px;
+  justify-content: center;
+}
+.our__team .socials__link {
+  background: none;
+  color: #afb1b8;
+}
+
+.our__team .socials__link:hover,
+.our__team .socials__link:focus {
+  background-color: var(--accent-color);
+  color: white;
+}
+
+.our__team .social__icon {
+  fill: currentColor;
 }
 
 /* -=-=-=-=-=-=- Portfolio CSS -=-=-=-=-=-=- */
