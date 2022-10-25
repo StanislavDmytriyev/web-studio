@@ -117,6 +117,7 @@ button {
 .header__contacts__list {
   display: flex;
   gap: 50px;
+  align-items: center;
 }
 
 .header__main__nav__link {
@@ -133,12 +134,22 @@ button {
 .header__main__nav__link:focus {
   color: var(--accent-color);
 }
+
 .header__contacts {
+  display: inline-flex;
+  align-items: center;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--main-grey-color);
+}
+
+.header__icon {
+  margin-right: 10px;
+  fill: currentColor;
+  width: 1em;
+  height: 1em;
 }
 
 .header__contacts:hover,
@@ -184,10 +195,20 @@ button {
 
 /* -=-=-=-=-=-=- INDEX HERO -=-=-=-=-=-=-  */
 .hero__section {
-  background-color: var(--dark-background-color);
-  color: var(--accent-color);
+  min-height: 600px;
+  width: 1600px;
   padding-top: 200px;
   padding-bottom: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: var(--dark-background-color);
+  color: var(--accent-color);
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/hero.jpg);
+  background-repeat: no-repeat;
 }
 
 .hero-slogan {
