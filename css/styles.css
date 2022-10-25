@@ -6,6 +6,7 @@
   --dark-background-color: #2f303a;
   --button-filter-background-color: #f5f4fa;
   --footer-text-semi-transparent-color: rgba(255, 255, 255, 0.6);
+  --grey-icons-color: #afb1b8;
 }
 
 /* Global Styles */
@@ -83,6 +84,9 @@ button {
 /* -=-=-=-=-=-=- HEADER -=-=-=-=-=-=-  */
 .header {
   border-bottom: 1px solid #ececec;
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .header__main__nav {
@@ -117,6 +121,7 @@ button {
 .header__contacts__list {
   display: flex;
   gap: 50px;
+  align-items: center;
 }
 
 .header__main__nav__link {
@@ -133,12 +138,22 @@ button {
 .header__main__nav__link:focus {
   color: var(--accent-color);
 }
+
 .header__contacts {
+  display: inline-flex;
+  align-items: center;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--main-grey-color);
+}
+
+.header__icon {
+  margin-right: 10px;
+  fill: currentColor;
+  width: 1em;
+  height: 1em;
 }
 
 .header__contacts:hover,
@@ -151,6 +166,36 @@ button {
   background-color: var(--dark-background-color);
   padding-top: 60px;
   padding-bottom: 60px;
+}
+
+.footer > .container {
+  display: flex;
+  gap: 70px;
+}
+
+.socials__list {
+  display: flex;
+  gap: 10px;
+}
+
+.social__icon {
+  fill: white;
+}
+
+.socials__link {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  justify-content: center;
+  align-items: center;
+}
+
+.socials__link:hover,
+.socials__link:focus {
+  background-color: var(--accent-color);
+  outline: none;
 }
 
 .footer__address__list {
@@ -182,12 +227,33 @@ button {
   color: var(--accent-color);
 }
 
+.footer__join__us {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
 /* -=-=-=-=-=-=- INDEX HERO -=-=-=-=-=-=-  */
 .hero__section {
-  background-color: var(--dark-background-color);
-  color: var(--accent-color);
+  min-height: 600px;
+  max-width: 1600px;
   padding-top: 200px;
   padding-bottom: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: var(--dark-background-color);
+  color: var(--accent-color);
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/hero.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .hero-slogan {
@@ -239,6 +305,33 @@ button {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--main-grey-color);
+}
+
+.pseudo__element::before {
+  content: "";
+  display: block;
+  height: 120px;
+  background-color: #f5f4fa;
+  margin-bottom: 30px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 26%;
+}
+
+.antenna::before {
+  background-image: url(../images/svg/features-antenna.svg);
+}
+
+.clock::before {
+  background-image: url(../images/svg/features-clock.svg);
+}
+
+.diagram::before {
+  background-image: url(../images/svg/features-diagram.svg);
+}
+
+.astronaut::before {
+  background-image: url(../images/svg/features-astronaut.svg);
 }
 
 /* -=-=-=-=-=-=- WHAT WE DO -=-=-=-=-=-=-  */
@@ -294,6 +387,59 @@ button {
   color: var(--main-grey-color);
 }
 
+.our__team .socials__list {
+  margin-top: 16px;
+  justify-content: center;
+}
+.our__team .socials__link {
+  background: none;
+  color: var(--grey-icons-color);
+}
+
+.our__team .socials__link:hover,
+.our__team .socials__link:focus {
+  background-color: var(--accent-color);
+  color: white;
+}
+
+.our__team .social__icon {
+  fill: currentColor;
+}
+
+/* -=-=-=-=-=-=- OUR CLIENTS -=-=-=-=-=-=-  */
+.our__clients.section {
+  padding-top: 38px;
+}
+
+.clients__list {
+  margin-top: 50px;
+  display: flex;
+  gap: 30px;
+}
+
+.clients__list__item {
+}
+
+.clients__list__link {
+  display: flex;
+  color: var(--grey-icons-color);
+  border: 1px solid currentColor;
+  border-radius: 4px;
+  width: 170px;
+  height: 92px;
+  justify-content: center;
+  align-items: center;
+}
+
+.clients__list__link:hover,
+.clients__list__link:focus {
+  color: var(--accent-color);
+}
+
+.clients__list__icon {
+  fill: currentColor;
+  height: 120%;
+}
 /* -=-=-=-=-=-=- Portfolio CSS -=-=-=-=-=-=- */
 /* -=-=-=-=-=-=- Portfolio CSS -=-=-=-=-=-=- */
 /* -=-=-=-=-=-=- Portfolio CSS -=-=-=-=-=-=- */
@@ -349,4 +495,15 @@ button {
   line-height: 1.88;
   letter-spacing: 0.03em;
   color: var(--main-grey-color);
+}
+
+.portolio__link {
+  display: block;
+}
+
+.portolio__link:hover,
+.portolio__link:focus {
+  background: #ffffff;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
