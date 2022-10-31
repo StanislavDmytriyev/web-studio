@@ -10,7 +10,7 @@
   --bezier: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* Global Styles */
+/* <---------------------------------------------- GLOBAL STYLES */
 
 html {
   box-sizing: border-box;
@@ -58,7 +58,8 @@ button {
   border: none;
 }
 
-/* -=-=-=-=-=-=- UTILITY CLASSES -=-=-=-=-=-=-  */
+/* <---------------------------------------------- UTILITY */
+
 .hidden {
   position: absolute;
   width: 1px;
@@ -94,7 +95,8 @@ button {
   bottom: -1px;
 }
 
-/* -=-=-=-=-=-=- HEADER -=-=-=-=-=-=-  */
+/* <---------------------------------------------- HEADER */
+
 .header {
   border-bottom: 1px solid #ececec;
   max-width: 1600px;
@@ -156,6 +158,7 @@ button {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--main-text-black-color);
+  transition: color 250ms var(--bezier);
 }
 .header__main__nav__link:hover,
 .header__main__nav__link:focus {
@@ -170,6 +173,7 @@ button {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--main-grey-color);
+  transition: color 250ms var(--bezier);
 }
 
 .header__icon {
@@ -184,7 +188,8 @@ button {
   color: var(--accent-color);
 }
 
-/* -=-=-=-=-=-=- FOOTER -=-=-=-=-=-=-  */
+/* <---------------------------------------------- FOOTER */
+
 .footer {
   background-color: var(--dark-background-color);
   padding-top: 60px;
@@ -213,6 +218,7 @@ button {
   background: rgba(255, 255, 255, 0.1);
   justify-content: center;
   align-items: center;
+  transition: background-color 250ms var(--bezier), outline 250ms var(--bezier);
 }
 
 .socials__link:hover,
@@ -234,6 +240,7 @@ button {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--main-white-color);
+  transition: color 250ms var(--bezier);
 }
 
 .footer__contacts {
@@ -242,6 +249,7 @@ button {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--footer-text-semi-transparent-color);
+  transition: color 250ms var(--bezier);
 }
 
 .footer__address:hover,
@@ -260,7 +268,8 @@ button {
   margin-bottom: 20px;
 }
 
-/* -=-=-=-=-=-=- INDEX HERO -=-=-=-=-=-=-  */
+/* <---------------------------------------------- INDEX HERO */
+
 .hero__section {
   min-height: 600px;
   max-width: 1600px;
@@ -305,7 +314,8 @@ button {
   border-radius: 4px;
 }
 
-/* -=-=-=-=-=-=- ADVANTAGES -=-=-=-=-=-=-  */
+/* <---------------------------------------------- ADVANTAGES */
+
 .advantages__list {
   display: flex;
   gap: 30px;
@@ -357,7 +367,7 @@ button {
   background-image: url(../images/svg/features-astronaut.svg);
 }
 
-/* <------------------------------------------------------------------ WHAT WE DO */
+/* <---------------------------------------------- WHAT WE DO */
 .section.what__we__do {
   padding-top: 0;
 }
@@ -389,7 +399,8 @@ button {
   color: var(--main-white-color);
   background-color: rgba(47, 48, 58, 0.8);
 }
-/* -=-=-=-=-=-=- OUR TEAM -=-=-=-=-=-=-  */
+/* <---------------------------------------------- OUT TEAM */
+
 .our__team {
   background: var(--button-filter-background-color);
 }
@@ -440,19 +451,21 @@ button {
 .our__team .socials__link {
   background: none;
   color: var(--grey-icons-color);
+  transition: color 250ms var(--bezier), background-color 250ms var(--bezier);
 }
 
 .our__team .socials__link:hover,
 .our__team .socials__link:focus {
   background-color: var(--accent-color);
-  color: white;
+  color: var(--main-white-color);
 }
 
 .our__team .social__icon {
   fill: currentColor;
 }
 
-/* -=-=-=-=-=-=- OUR CLIENTS -=-=-=-=-=-=-  */
+/* <---------------------------------------------- OUR CLIENTS */
+
 .our__clients.section {
   padding-top: 38px;
 }
@@ -475,6 +488,7 @@ button {
   height: 92px;
   justify-content: center;
   align-items: center;
+  transition: color 250ms var(--bezier);
 }
 
 .clients__list__link:hover,
@@ -486,9 +500,61 @@ button {
   fill: currentColor;
   height: 120%;
 }
-/* -=-=-=-=-=-=- Portfolio CSS -=-=-=-=-=-=- */
-/* -=-=-=-=-=-=- Portfolio CSS -=-=-=-=-=-=- */
-/* -=-=-=-=-=-=- Portfolio CSS -=-=-=-=-=-=- */
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  z-index: 20;
+  background-color: rgba(0, 0, 0, 0.2);
+  justify-content: center;
+  align-items: center;
+  opacity: 1;
+  transition: opacity 250ms var(--bezier);
+}
+
+.modal {
+  width: 528px;
+  height: 581px;
+  background-color: var(--main-white-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  position: relative;
+  transform: scale(1);
+  transition: transform 250ms var(--bezier) 100ms;
+}
+
+.close__button {
+  position: absolute;
+  right: 8px;
+  top: 8px;
+
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 6px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: var(--main-white-color);
+  border-radius: 50%;
+}
+
+.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.is-hidden .modal {
+  transform: scale(0.8);
+  transition: transform 250ms var(--bezier);
+}
+
+/* <---------------------------------------------- PORTFOLIO */
+/* <---------------------------------------------- PORTFOLIO */
+/* <---------------------------------------------- PORTFOLIO */
 
 .portfolio__filters__list {
   display: flex;
@@ -504,6 +570,8 @@ button {
   letter-spacing: 0.03em;
   border-radius: 4px;
   padding: 6px 22px;
+  transition: background-color 250 var(--bezier), color 250ms var(--bezier),
+    filter 250ms var(--bezier);
 }
 .portolio__filters__button:focus,
 .portolio__filters__button:hover {
@@ -550,11 +618,13 @@ button {
 
 .portolio__link {
   display: block;
+  transition: background-color 250ms var(--bezier),
+    box-shadow 250ms var(--bezier);
 }
 
 .portolio__link:hover,
 .portolio__link:focus {
-  background: #ffffff;
+  background-color: var(--main-white-color);
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
