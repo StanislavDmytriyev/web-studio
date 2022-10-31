@@ -87,6 +87,12 @@ button {
   max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  background-color: white;
 }
 
 .header__main__nav {
