@@ -82,6 +82,18 @@ button {
   padding-bottom: 94px;
 }
 
+.current__page::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 4px;
+  background-color: var(--accent-color);
+  border-radius: 2px;
+  z-index: 15;
+  position: absolute;
+  bottom: -1px;
+}
+
 /* -=-=-=-=-=-=- HEADER -=-=-=-=-=-=-  */
 .header {
   border-bottom: 1px solid #ececec;
@@ -123,6 +135,10 @@ button {
   display: flex;
   gap: 50px;
   margin-right: auto;
+}
+
+.header__main__nav__list > li {
+  position: relative;
 }
 
 .header__contacts__list {
