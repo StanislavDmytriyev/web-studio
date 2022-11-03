@@ -501,6 +501,8 @@ button {
   height: 120%;
 }
 
+/* <---------------------------------------------- MODAL */
+
 .backdrop {
   position: fixed;
   top: 0;
