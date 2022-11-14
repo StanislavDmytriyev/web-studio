@@ -305,6 +305,11 @@ button {
   color: rgba(255, 255, 255, 0.6);
 }
 
+.footer__form__input:focus-visible {
+  outline: none;
+  border-color: var(--accent-color);
+}
+
 .footer__form__button {
   display: flex;
   align-items: center;
