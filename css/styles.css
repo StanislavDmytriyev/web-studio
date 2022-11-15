@@ -614,12 +614,12 @@ button {
 }
 
 .modal__form__slogan {
-font-weight: 700;
-font-size: 20px;
-line-height: 1.15;
-text-align: center;
-letter-spacing: 0.03em;
-margin-bottom: 12px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-bottom: 12px;
 }
 
 .modal__form__label {
@@ -629,22 +629,22 @@ margin-bottom: 12px;
 }
 
 .modal__form__label__tag {
-display: block;
-font-size: 12px;
-line-height: 1.17;
-letter-spacing: 0.01em;
-color: var(--main-grey-color)
+  display: block;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+  color: var(--main-grey-color);
 }
 
 .modal__form__input {
-height: 40px;
-width: 100%;
-display: flex;
-align-items: center;
-border: 1px solid rgba(33, 33, 33, 0.2);
-border-radius: 4px;
-padding-left: 42px;
-margin-top: 4px;
+  height: 40px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  padding-left: 42px;
+  margin-top: 4px;
 }
 
 .modal__form__input:focus-visible {
@@ -665,7 +665,6 @@ margin-top: 4px;
 
 .modal__form__textarea {
   margin-top: 4px;
-  margin-bottom: 20px;
   padding: 12px 16px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
@@ -677,28 +676,35 @@ margin-top: 4px;
 .modal__form__textarea:focus-visible {
   outline: none;
   border-color: var(--accent-color);
-  }
+}
 
 .modal__form__textarea::placeholder {
-font-size: 12px;
-line-height: 1.33;
-letter-spacing: 0.01em;
-color: rgba(117, 117, 117, 0.5);
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.5);
+}
+
+.modal__form__policy {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 30px;
 }
 
 .modal__form__policy__text {
-font-size: 14px;
-line-height: 1.71;
-color: #757575;
-letter-spacing: 0.03em;
+  display: inline-block;
+  font-size: 14px;
+  line-height: 1.71;
+  color: #757575;
+  letter-spacing: 0.03em;
 }
 
 .modal__form__policy__link {
-text-decoration-line: underline;
-color: var(--accent-color);
+  text-decoration-line: underline;
+  color: var(--accent-color);
 }
-
-.modal__form__policy__original__checkbox {}
 
 .modal__form__policy__custom__checkbox {
   display: inline-flex;
@@ -706,8 +712,30 @@ color: var(--accent-color);
   align-items: center;
   width: 16px;
   height: 15px;
+  border: 2px solid var(--main-text-black-color);
+  border-radius: 2px;
+}
+
+.modal__form__policy__original__checkbox:checked
+  + .modal__form__policy__custom__checkbox {
+  border-color: var(--accent-color);
   background-color: var(--accent-color);
-  
+}
+
+.modal__form__submit__button {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px 52px;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  color: var(--main-white-color);
+  background: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
 }
 
 /* <---------------------------------------------- PORTFOLIO */

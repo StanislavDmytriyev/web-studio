@@ -466,61 +466,67 @@
       </div>
     </footer>
 
-    <!-- УБРАЛ is-hidden -->
-    <div class="backdrop" data-modal>
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="close__button" data-modal-close>
           <svg width="18" height="18">
             <use href="./images/svg/_sprite.svg#icon-closeX"></use>
           </svg>
         </button>
-        <p class="modal__form__slogan">Залиште свої дані, ми вам передзвонимо</p>
+        <p class="modal__form__slogan">
+          Залиште свої дані, ми вам передзвонимо
+        </p>
         <form class="modal__form">
           <label class="modal__form__label">
-           <span class="modal__form__label__tag">
-            Ім'я
-           </span>
+            <span class="modal__form__label__tag"> Ім'я </span>
             <input class="modal__form__input" type="text" />
             <svg class="modal__form__input__icon" width="18" height="18">
               <use href="./images/svg/_sprite.svg#icon-person"></use>
             </svg>
           </label>
           <label class="modal__form__label">
-            <span class="modal__form__label__tag">
-              Телефон
-             </span>
+            <span class="modal__form__label__tag"> Телефон </span>
             <input class="modal__form__input" type="text" />
             <svg class="modal__form__input__icon" width="18" height="18">
               <use href="./images/svg/_sprite.svg#icon-phone"></use>
             </svg>
           </label>
           <label class="modal__form__label">
-            <span class="modal__form__label__tag">
-              Пошта
-             </span>
+            <span class="modal__form__label__tag"> Пошта </span>
             <input class="modal__form__input" type="text" />
             <svg class="modal__form__input__icon" width="18" height="18">
               <use href="./images/svg/_sprite.svg#icon-mail"></use>
             </svg>
           </label>
           <label class="modal__form__label" for="modal__comments">
-            <span class="modal__form__label__tag">
-              Коментар
-            </span>
-            <textarea class="modal__form__textarea" name="" id="modal__comments" placeholder="Введіть текст"></textarea>
+            <span class="modal__form__label__tag"> Коментар </span>
+            <textarea
+              class="modal__form__textarea"
+              name=""
+              id="modal__comments"
+              placeholder="Введіть текст"
+            ></textarea>
           </label>
-          <label for="policy">
-            <input type="checkbox" name="agree-policy" id="policy" class="modal__form__policy__original__checkbox hidden"/>
+          <label class="modal__form__policy" for="policy">
+            <input
+              type="checkbox"
+              name="agree-policy"
+              id="policy"
+              class="modal__form__policy__original__checkbox hidden"
+            />
             <span class="modal__form__policy__custom__checkbox">
               <svg width="13" height="10">
                 <use href="./images/svg/_sprite.svg#icon-check"></use>
               </svg>
             </span>
             <p class="modal__form__policy__text">
-              Погоджуюся з розсилкою та приймаю <a class="modal__form__policy__link" href="">Умови договору</a>
+              Погоджуюся з розсилкою та приймаю
+              <a class="modal__form__policy__link" href="">Умови договору</a>
             </p>
           </label>
-          <button type="submit">Відправити</button>
+          <button class="modal__form__submit__button" type="submit">
+            Відправити
+          </button>
         </form>
       </div>
     </div>
