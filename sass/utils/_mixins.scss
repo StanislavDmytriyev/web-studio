@@ -1,0 +1,27 @@
+// Это mixin, вызывается через @include
+@mixin centerFlex($type: flex) {
+  display: $type;
+  align-items: center;
+  justify-content: center;
+}
+
+// Это placeholder, вызывается через @extend
+%list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+@each $iconName in $icons {
+  .icon-#{$iconName} {
+    background-image: url(../images/#{$iconName}.svg);
+  }
+}
+
+@mixin generateIcons($iconList) {
+  @each $iconName in $iconList {
+    .icon-#{$iconName} {
+      background-image: url(../images/#{$iconName}.svg);
+    }
+  }
+}
