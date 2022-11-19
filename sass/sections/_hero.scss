@@ -28,9 +28,11 @@
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--main-white-color);
+  margin-bottom: 30px;
 }
 
-.hero__order__service {
-  margin: 30px auto 0 auto;
+.hero__button {
   padding: 10px 32px;
+  margin-left: auto;
+  margin-right: auto;
 }
