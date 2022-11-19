@@ -1,10 +1,6 @@
-.hero__section {
-  min-height: 600px;
-  max-width: 1600px;
+.hero {
   padding-top: 200px;
   padding-bottom: 200px;
-  margin-left: auto;
-  margin-right: auto;
   background-color: var(--dark-background-color);
   color: var(--accent-color);
   background-image: linear-gradient(
@@ -16,7 +12,14 @@
   background-size: cover;
 }
 
-.hero-slogan {
+.hero__section {
+  min-height: 600px;
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero__slogan {
   font-family: "Roboto", sans-serif;
   font-weight: 900;
   font-size: 44px;
@@ -28,16 +31,6 @@
 }
 
 .hero__order__service {
-  font-family: "Roboto", sans-serif;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.88;
-  letter-spacing: 0.06em;
-  color: var(--main-white-color);
-  background-color: var(--accent-color);
-  display: block;
   margin: 30px auto 0 auto;
   padding: 10px 32px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
 }

@@ -249,6 +249,19 @@ button {
   color: #000000;
 }
 
+.button {
+  display: flex;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  line-height: 1.88;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 4px;
+  color: var(--main-white-color);
+  background-color: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
 .header {
   border-bottom: 1px solid #ececec;
   background-color: white;
@@ -322,13 +335,9 @@ button {
   fill: currentColor;
 }
 
-.hero__section {
-  min-height: 600px;
-  max-width: 1600px;
+.hero {
   padding-top: 200px;
   padding-bottom: 200px;
-  margin-left: auto;
-  margin-right: auto;
   background-color: var(--dark-background-color);
   color: var(--accent-color);
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero.jpg);
@@ -336,7 +345,14 @@ button {
   background-size: cover;
 }
 
-.hero-slogan {
+.hero__section {
+  min-height: 600px;
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero__slogan {
   font-family: "Roboto", sans-serif;
   font-weight: 900;
   font-size: 44px;
@@ -348,18 +364,8 @@ button {
 }
 
 .hero__order__service {
-  font-family: "Roboto", sans-serif;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.88;
-  letter-spacing: 0.06em;
-  color: var(--main-white-color);
-  background-color: var(--accent-color);
-  display: block;
   margin: 30px auto 0 auto;
   padding: 10px 32px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
 }
 
 .advantages__list {
@@ -724,18 +730,9 @@ button {
 }
 
 .modal__form__submit__button {
-  display: block;
   margin-left: auto;
   margin-right: auto;
   padding: 10px 52px;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.88;
-  letter-spacing: 0.06em;
-  color: var(--main-white-color);
-  background: var(--accent-color);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
 }
 
 .footer {
@@ -777,6 +774,13 @@ button {
 .socials__link:focus {
   background-color: var(--accent-color);
   outline: none;
+}
+
+.footer__form__button {
+  align-items: center;
+  justify-content: flex-end;
+  gap: 10px;
+  padding: 8px 30px;
 }
 
 .footer__address__list {
@@ -875,22 +879,6 @@ button {
 .footer__form__input:focus-visible {
   outline: none;
   border-color: var(--accent-color);
-}
-
-.footer__form__button {
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  width: 200px;
-  height: 50px;
-  background: var(--accent-color);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-  font-weight: 700;
-  letter-spacing: 0.06em;
-  color: var(--main-white-color);
-  gap: 10px;
-  padding: 10px 28px;
 }
 
 .footer__form__button__icon {
