@@ -1,18 +1,14 @@
-.section.what__we__do {
+.our-work {
   padding-top: 0;
 }
 
-.what__we__do__list {
+.our-work__list {
   margin-top: 50px;
   display: flex;
   gap: 30px;
 }
 
-.what__we__do__list__item .thumb {
-  position: relative;
-}
-
-.what__we__do__description {
+.our-work__description {
   position: absolute;
   bottom: 0;
 
