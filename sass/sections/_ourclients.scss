@@ -1,14 +1,14 @@
-.our__clients.section {
+.section__clients {
   padding-top: 38px;
 }
 
-.clients__list {
+.clients-list {
   margin-top: 50px;
   display: flex;
   gap: 30px;
 }
 
-.clients__list__link {
+.clients-list__link {
   display: flex;
   color: var(--grey-icons-color);
   border: 1px solid currentColor;
@@ -18,13 +18,12 @@
   justify-content: center;
   align-items: center;
   transition: color 250ms var(--bezier);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }
 
-.clients__list__link:hover,
-.clients__list__link:focus {
-  color: var(--accent-color);
-}
-
-.clients__list__icon {
+.clients-list__icon {
   fill: currentColor;
 }
