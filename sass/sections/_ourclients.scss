@@ -9,14 +9,13 @@
 }
 
 .clients-list__link {
-  display: flex;
+  @include centerFlex;
+
   color: var(--grey-icons-color);
   border: 1px solid currentColor;
   border-radius: 4px;
   width: 170px;
   height: 92px;
-  justify-content: center;
-  align-items: center;
   transition: color 250ms var(--bezier);
   &:hover,
   &:focus {

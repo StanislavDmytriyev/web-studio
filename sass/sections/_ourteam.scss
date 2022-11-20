@@ -7,7 +7,7 @@
 }
 
 .our-team {
-  display: flex;
+  @include centerFlex;
   gap: 30px;
 }
 

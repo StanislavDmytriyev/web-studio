@@ -1,5 +1,5 @@
 .subscribe-form__box {
-  display: flex;
+  @include centerFlex;
   gap: 12px;
 }
 

@@ -1,5 +1,5 @@
 .button {
-  display: flex;
+  @include centerFlex;
   font-weight: 700;
   letter-spacing: 0.06em;
   line-height: 1.88;

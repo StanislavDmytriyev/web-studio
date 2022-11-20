@@ -19,12 +19,11 @@
 }
 
 .main-nav {
-  display: flex;
-  align-items: center;
+  @include centerFlex;
 }
 
 .main-nav__list {
-  display: flex;
+  @include centerFlex;
   gap: 50px;
   margin-right: auto;
 
@@ -50,9 +49,8 @@
 }
 
 .contacts-list {
-  display: flex;
+  @include centerFlex;
   gap: 50px;
-  align-items: center;
 }
 
 .contacts-list__link {

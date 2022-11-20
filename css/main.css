@@ -263,6 +263,8 @@ button {
 
 .button {
   display: flex;
+  align-items: center;
+  justify-content: center;
   font-weight: 700;
   letter-spacing: 0.06em;
   line-height: 1.88;
@@ -276,8 +278,10 @@ button {
 
 .socials {
   display: flex;
-  margin-top: 16px;
+  align-items: center;
   justify-content: center;
+  gap: 10px;
+  margin-top: 16px;
 }
 
 .social__icon {
@@ -286,8 +290,8 @@ button {
 
 .socials__link {
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   width: 44px;
   height: 44px;
   border-radius: 50%;
@@ -316,6 +320,8 @@ button {
 
 .subscribe-form__box {
   display: flex;
+  align-items: center;
+  justify-content: center;
   gap: 12px;
 }
 
@@ -380,6 +386,7 @@ button {
 
 .filters-list {
   display: flex;
+  align-items: center;
   justify-content: center;
   gap: 8px;
   margin-bottom: 50px;
@@ -423,10 +430,13 @@ button {
 .main-nav {
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .main-nav__list {
   display: flex;
+  align-items: center;
+  justify-content: center;
   gap: 50px;
   margin-right: auto;
 }
@@ -451,8 +461,9 @@ button {
 
 .contacts-list {
   display: flex;
-  gap: 50px;
   align-items: center;
+  justify-content: center;
+  gap: 50px;
 }
 
 .contacts-list__link {
@@ -566,17 +577,19 @@ button {
 }
 
 .our-work__list {
-  margin-top: 50px;
   display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
   gap: 30px;
 }
 
 .our-work__description {
-  position: absolute;
-  bottom: 0;
   display: flex;
   align-items: center;
   justify-content: center;
+  position: absolute;
+  bottom: 0;
   height: 70px;
   width: 100%;
   font-size: 14px;
@@ -597,6 +610,8 @@ button {
 
 .our-team {
   display: flex;
+  align-items: center;
+  justify-content: center;
   gap: 30px;
 }
 
@@ -639,13 +654,13 @@ button {
 
 .clients-list__link {
   display: flex;
+  align-items: center;
+  justify-content: center;
   color: var(--grey-icons-color);
   border: 1px solid currentColor;
   border-radius: 4px;
   width: 170px;
   height: 92px;
-  justify-content: center;
-  align-items: center;
   transition: color 250ms var(--bezier);
 }
 .clients-list__link:hover, .clients-list__link:focus {
@@ -657,15 +672,15 @@ button {
 }
 
 .backdrop {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   position: fixed;
   top: 0;
   width: 100%;
   height: 100%;
-  display: flex;
   z-index: 20;
   background-color: rgba(0, 0, 0, 0.2);
-  justify-content: center;
-  align-items: center;
   opacity: 1;
   transition: opacity 250ms var(--bezier);
 }
@@ -729,10 +744,11 @@ button {
 }
 
 .modal__form__input {
-  height: 40px;
-  width: 100%;
   display: flex;
   align-items: center;
+  justify-content: center;
+  height: 40px;
+  width: 100%;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   padding-left: 42px;

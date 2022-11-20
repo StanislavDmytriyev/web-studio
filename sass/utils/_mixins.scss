@@ -1,9 +1,9 @@
 // Это mixin, вызывается через @include
-// @mixin centerFlex($type: flex) {
-//   display: $type;
-//   align-items: center;
-//   justify-content: center;
-// }
+@mixin centerFlex($type: flex) {
+  display: $type;
+  align-items: center;
+  justify-content: center;
+}
 
 // Это placeholder, вызывается через @extend
 // %list {

@@ -1,7 +1,7 @@
 .socials {
-  display: flex;
+  @include centerFlex;
+  gap: 10px;
   margin-top: 16px;
-  justify-content: center;
 }
 
 .social__icon {
@@ -9,9 +9,7 @@
 }
 
 .socials__link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include centerFlex;
 
   width: 44px;
   height: 44px;
