@@ -11,41 +11,38 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./css/modern-normalize.css" />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
     <!-- Header -->
-    <header class="header">
+    <header class="header header--fixed">
       <div class="container">
-        <nav class="header__main__nav">
-          <a class="logo" href="./index.html" lang="en"
-            >Web<span class="logo-blue-black">Studio</span></a
+        <nav class="main-nav">
+          <a class="logo header__logo" href="./index.html" lang="en"
+            >Web<span class="logo--dark">Studio</span></a
           >
-          <ul class="header__main__nav__list">
+          <ul class="main-nav__list">
             <li>
-              <a class="header__main__nav__link" href="./index.html">Студія</a>
+              <a class="main-nav__link" href="./index.html">Студія</a>
             </li>
-            <li class="current__page">
-              <a class="header__main__nav__link" href="./portfolio.html"
-                >Портфоліо</a
-              >
+            <li class="current-page">
+              <a class="main-nav__link" href="./portfolio.html">Портфоліо</a>
             </li>
-            <li><a class="header__main__nav__link" href="#">Контакти</a></li>
+            <li><a class="main-nav__link" href="#">Контакти</a></li>
           </ul>
-          <ul class="header__contacts__list">
-            <li class="header__contacts__list">
-              <a class="header__contacts" href="mailto:info@devstudio.com">
-                <svg class="header__icon">
+          <ul class="contacts-list">
+            <li class="contacts-list__item">
+              <a class="contacts-list__link" href="mailto:info@devstudio.com">
+                <svg class="contacts-list__icon" width="16" height="12">
                   <use href="./images/svg/_sprite.svg#icon-envelope"></use>
                 </svg>
 
                 info@devstudio.com</a
               >
             </li>
-            <li class="header__contacts__list">
-              <a class="header__contacts" href="tel:+380961111111">
-                <svg class="header__icon">
+            <li class="contacts-list">
+              <a class="contacts-list__link" href="tel:+380961111111">
+                <svg class="contacts-list__icon" width="10" height="16">
                   <use href="./images/svg/_sprite.svg#icon-smartphone"></use>
                 </svg>
                 +38 096 111 11 11</a
@@ -59,47 +56,43 @@
       <!-- Portfolio -->
       <section class="section portfolio__section">
         <div class="container">
-          <h1 class="hidden">Наше Портфоліо</h1>
-          <ul class="portfolio__filters__list">
+          <h1 class="visually-hidden">Наше Портфоліо</h1>
+          <ul class="filters-list">
             <li>
-              <button class="portolio__filters__button" type="button">
-                Усі
-              </button>
+              <button class="filters-list__filter" type="button">Усі</button>
             </li>
             <li>
-              <button class="portolio__filters__button" type="button">
+              <button class="filters-list__filter" type="button">
                 Веб-сайти
               </button>
             </li>
             <li>
-              <button class="portolio__filters__button" type="button">
+              <button class="filters-list__filter" type="button">
                 Додатки
               </button>
             </li>
             <li>
-              <button class="portolio__filters__button" type="button">
-                Дизайн
-              </button>
+              <button class="filters-list__filter" type="button">Дизайн</button>
             </li>
             <li>
-              <button class="portolio__filters__button" type="button">
+              <button class="filters-list__filter" type="button">
                 Маркетинг
               </button>
             </li>
           </ul>
-          <ul class="portfolio__list">
-            <li class="portfolio__list__item">
+          <ul class="portfolio">
+            <li class="portfolio__item">
               <a class="portolio__link" href="">
                 <div class="thumb">
                   <img
-                    class="portolio__list__item__picture"
+                    class="portfolio__picture"
                     src="./images/portfolio/portfolio-image-01.jpg"
                     alt="Технокряк команда"
                     width="370"
                     height="294"
                   />
-                  <div class="portfolio__popup__window">
-                    <p class="portfolio__popup__description">
+                  <div class="portfolio__popup">
+                    <p class="portfolio__description">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
                       функціоналу та сервісів. Все це дозволить відвідувачу
                       отримати вичерпні відомості про компанію чи приватну
@@ -107,102 +100,96 @@
                     </p>
                   </div>
                 </div>
-                <div class="portfolio__list__item__description">
-                  <h2 class="portfolio__list__item__project__name">
-                    Технокряк
-                  </h2>
-                  <p class="portfolio__list__item__project__type">Веб-сайт</p>
+                <div class="portfolio__meta">
+                  <h2 class="portfolio__header">Технокряк</h2>
+                  <p class="portfolio__type">Веб-сайт</p>
                 </div>
               </a>
             </li>
-            <li class="portfolio__list__item">
+            <li class="portfolio__item">
               <a class="portolio__link" href="">
                 <div class="thumb">
                   <img
-                    class="portolio__list__item__picture"
+                    class="portfolio__picture"
                     src="./images/portfolio/portfolio-image-02.jpg"
                     alt="Стеф Каррі с Голден Стейт блокує бросок соперника"
                     width="370"
                     height="294"
                   />
-                  <div class="portfolio__popup__window">
-                    <p class="portfolio__popup__description">
+                  <div class="portfolio__popup">
+                    <p class="portfolio__description">
                       Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                       Consequatur harum officia voluptatem iste in vero, quam
                       consequuntur laborum. Ipsa, est.
                     </p>
                   </div>
                 </div>
-                <div class="portfolio__list__item__description">
-                  <h2 class="portfolio__list__item__project__name">
+                <div class="portfolio__meta">
+                  <h2 class="portfolio__header">
                     Постер New Orlean vs Golden Star
                   </h2>
-                  <p class="portfolio__list__item__project__type">Дизайн</p>
+                  <p class="portfolio__type">Дизайн</p>
                 </div>
               </a>
             </li>
-            <li class="portfolio__list__item">
+            <li class="portfolio__item">
               <a class="portolio__link" href="">
                 <div class="thumb">
                   <img
-                    class="portolio__list__item__picture"
+                    class="portfolio__picture"
                     src="./images/portfolio/portfolio-image-03.jpg"
                     alt="Логотип ресторану морепродуктів"
                     width="370"
                     height="294"
                   />
-                  <div class="portfolio__popup__window">
-                    <p class="portfolio__popup__description">
+                  <div class="portfolio__popup">
+                    <p class="portfolio__description">
                       Lorem ipsum dolor sit amet consectetur adipisicing elit.
                       Ratione, necessitatibus! Voluptates fugiat ipsum quas ad.
                     </p>
                   </div>
                 </div>
-                <div class="portfolio__list__item__description">
-                  <h2 class="portfolio__list__item__project__name">
-                    Ресторан Seafood
-                  </h2>
-                  <p class="portfolio__list__item__project__type">Додаток</p>
+                <div class="portfolio__meta">
+                  <h2 class="portfolio__header">Ресторан Seafood</h2>
+                  <p class="portfolio__type">Додаток</p>
                 </div>
               </a>
             </li>
-            <li class="portfolio__list__item">
+            <li class="portfolio__item">
               <a class="portolio__link" href="">
                 <div class="thumb">
                   <img
-                    class="portolio__list__item__picture"
+                    class="portfolio__picture"
                     src="./images/portfolio/portfolio-image-04.jpg"
                     alt="Навушники"
                     width="370"
                     height="294"
                   />
-                  <div class="portfolio__popup__window">
-                    <p class="portfolio__popup__description">
+                  <div class="portfolio__popup">
+                    <p class="portfolio__description">
                       Lorem ipsum dolor sit amet consectetur adipisicing elit.
                       Ratione, necessitatibus! Voluptates fugiat ipsum quas ad.
                     </p>
                   </div>
                 </div>
-                <div class="portfolio__list__item__description">
-                  <h2 class="portfolio__list__item__project__name">
-                    Проєкт Prime
-                  </h2>
-                  <p class="portfolio__list__item__project__type">Маркетинг</p>
+                <div class="portfolio__meta">
+                  <h2 class="portfolio__header">Проєкт Prime</h2>
+                  <p class="portfolio__type">Маркетинг</p>
                 </div>
               </a>
             </li>
-            <li class="portfolio__list__item">
+            <li class="portfolio__item">
               <a class="portolio__link" href="">
                 <div class="thumb">
                   <img
-                    class="portolio__list__item__picture"
+                    class="portfolio__picture"
                     src="./images/portfolio/portfolio-image-05.jpg"
                     alt="Дві коробки білого та коричневого коліру"
                     width="370"
                     height="294"
                   />
-                  <div class="portfolio__popup__window">
-                    <p class="portfolio__popup__description">
+                  <div class="portfolio__popup">
+                    <p class="portfolio__description">
                       Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                       Ipsum ducimus tempore qui dignissimos commodi unde. Porro
                       eveniet ipsam sint temporibus ab, placeat reiciendis
@@ -211,26 +198,24 @@
                     </p>
                   </div>
                 </div>
-                <div class="portfolio__list__item__description">
-                  <h2 class="portfolio__list__item__project__name">
-                    Проєкт Boxes
-                  </h2>
-                  <p class="portfolio__list__item__project__type">Додаток</p>
+                <div class="portfolio__meta">
+                  <h2 class="portfolio__header">Проєкт Boxes</h2>
+                  <p class="portfolio__type">Додаток</p>
                 </div>
               </a>
             </li>
-            <li class="portfolio__list__item">
+            <li class="portfolio__item">
               <a class="portolio__link" href="">
                 <div class="thumb">
                   <img
-                    class="portolio__list__item__picture"
+                    class="portfolio__picture"
                     src="./images/portfolio/portfolio-image-06.jpg"
                     alt="Єкран монітора з інформацією на темному фоні"
                     width="370"
                     height="294"
                   />
-                  <div class="portfolio__popup__window">
-                    <p class="portfolio__popup__description">
+                  <div class="portfolio__popup">
+                    <p class="portfolio__description">
                       Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                       Commodi veritatis cumque, ad laudantium rem ab officia,
                       natus impedit itaque aperiam maxime dicta architecto,
@@ -238,26 +223,24 @@
                     </p>
                   </div>
                 </div>
-                <div class="portfolio__list__item__description">
-                  <h2 class="portfolio__list__item__project__name">
-                    Inspiration has no Borders
-                  </h2>
-                  <p class="portfolio__list__item__project__type">Веб-сайт</p>
+                <div class="portfolio__meta">
+                  <h2 class="portfolio__header">Inspiration has no Borders</h2>
+                  <p class="portfolio__type">Веб-сайт</p>
                 </div>
               </a>
             </li>
-            <li class="portfolio__list__item">
+            <li class="portfolio__item">
               <a class="portolio__link" href="">
                 <div class="thumb">
                   <img
-                    class="portolio__list__item__picture"
+                    class="portfolio__picture"
                     src="./images/portfolio/portfolio-image-07.jpg"
                     alt="Книжка у якій написано Лімітед Едішн"
                     width="370"
                     height="294"
                   />
-                  <div class="portfolio__popup__window">
-                    <p class="portfolio__popup__description">
+                  <div class="portfolio__popup">
+                    <p class="portfolio__description">
                       Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                       Commodi veritatis cumque, ad laudantium rem ab officia,
                       natus impedit itaque aperiam maxime dicta architecto,
@@ -265,26 +248,24 @@
                     </p>
                   </div>
                 </div>
-                <div class="portfolio__list__item__description">
-                  <h2 class="portfolio__list__item__project__name">
-                    Видання Limited Edition
-                  </h2>
-                  <p class="portfolio__list__item__project__type">Дизайн</p>
+                <div class="portfolio__meta">
+                  <h2 class="portfolio__header">Видання Limited Edition</h2>
+                  <p class="portfolio__type">Дизайн</p>
                 </div>
               </a>
             </li>
-            <li class="portfolio__list__item">
+            <li class="portfolio__item">
               <a class="portolio__link" href="">
                 <div class="thumb">
                   <img
-                    class="portolio__list__item__picture"
+                    class="portfolio__picture"
                     src="./images/portfolio/portfolio-image-08.jpg"
                     alt="Ярличок лейбл з логотипом"
                     width="370"
                     height="294"
                   />
-                  <div class="portfolio__popup__window">
-                    <p class="portfolio__popup__description">
+                  <div class="portfolio__popup">
+                    <p class="portfolio__description">
                       Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                       Commodi veritatis cumque, ad laudantium rem ab officia,
                       natus impedit itaque aperiam maxime dicta architecto,
@@ -292,26 +273,24 @@
                     </p>
                   </div>
                 </div>
-                <div class="portfolio__list__item__description">
-                  <h2 class="portfolio__list__item__project__name">
-                    Проєкт LAB
-                  </h2>
-                  <p class="portfolio__list__item__project__type">Маркетинг</p>
+                <div class="portfolio__meta">
+                  <h2 class="portfolio__header">Проєкт LAB</h2>
+                  <p class="portfolio__type">Маркетинг</p>
                 </div>
               </a>
             </li>
-            <li class="portfolio__list__item">
+            <li class="portfolio__item">
               <a class="portolio__link" href="">
                 <div class="thumb">
                   <img
-                    class="portolio__list__item__picture"
+                    class="portfolio__picture"
                     src="./images/portfolio/portfolio-image-09.jpg"
                     alt="Ноутбук на якому на екрані написано Гроуинг Бізнес"
                     width="370"
                     height="294"
                   />
-                  <div class="portfolio__popup__window">
-                    <p class="portfolio__popup__description">
+                  <div class="portfolio__popup">
+                    <p class="portfolio__description">
                       Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                       Commodi veritatis cumque, ad laudantium rem ab officia,
                       natus impedit itaque aperiam maxime dicta architecto,
@@ -319,11 +298,9 @@
                     </p>
                   </div>
                 </div>
-                <div class="portfolio__list__item__description">
-                  <h2 class="portfolio__list__item__project__name">
-                    Growing Business
-                  </h2>
-                  <p class="portfolio__list__item__project__type">Додаток</p>
+                <div class="portfolio__meta">
+                  <h2 class="portfolio__header">Growing Business</h2>
+                  <p class="portfolio__type">Додаток</p>
                 </div>
               </a>
             </li>
@@ -333,13 +310,13 @@
     </main>
     <!-- Footer -->
     <footer class="footer">
-      <div class="container">
+      <div class="container footer__container">
         <div>
-          <a class="logo" href="./index.html" lang="en"
-            >Web<span class="logo-blue-white">Studio</span></a
+          <a class="logo footer__logo" href="./index.html" lang="en"
+            >Web<span class="logo--light">Studio</span></a
           >
           <address class="address">
-            <ul class="footer__address__list">
+            <ul class="address__list">
               <li>
                 <p class="footer__address">м. Київ, пр-т Лесі Українки, 26</p>
               </li>
@@ -357,31 +334,31 @@
           </address>
         </div>
         <div>
-          <p class="footer__join__us">приєднуйтесь</p>
-          <ul class="socials__list">
-            <li class="socials__list__item">
-              <a class="socials__link" href="">
+          <p class="footer__slogan">приєднуйтесь</p>
+          <ul class="socials footer__socials">
+            <li class="socials__item">
+              <a class="socials__link socials__link--dark" href="">
                 <svg height="20" width="20" class="social__icon">
                   <use href="./images/svg/_sprite.svg#icon-instagram"></use>
                 </svg>
               </a>
             </li>
-            <li class="socials__list__item">
-              <a class="socials__link" href="">
+            <li class="socials__item">
+              <a class="socials__link socials__link--dark" href="">
                 <svg height="20" width="20" class="social__icon">
                   <use href="./images/svg/_sprite.svg#icon-twitter"></use>
                 </svg>
               </a>
             </li>
-            <li class="socials__list__item">
-              <a class="socials__link" href="">
+            <li class="socials__item">
+              <a class="socials__link socials__link--dark" href="">
                 <svg height="20" width="20" class="social__icon">
                   <use href="./images/svg/_sprite.svg#icon-facebook"></use>
                 </svg>
               </a>
             </li>
-            <li class="socials__list__item">
-              <a class="socials__link" href="">
+            <li class="socials__item">
+              <a class="socials__link socials__link--dark" href="">
                 <svg height="20" width="20" class="social__icon">
                   <use href="./images/svg/_sprite.svg#icon-linkedin"></use>
                 </svg>
@@ -389,21 +366,21 @@
             </li>
           </ul>
         </div>
-        <form class="footer__form">
-          <label class="footer__form__label" for="subscribe__email"
+        <form class="subscribe-form">
+          <label class="subscribe-form__label" for="subscribe__email"
             >Підпишіться на розсилку</label
           >
-          <div>
+          <div class="subscribe-form__box">
             <input
               type="text"
-              class="footer__form__input"
+              class="subscribe-form__input"
               id="subscribe__email"
               placeholder="E-mail"
               name="subscribe-email"
             />
-            <button class="footer__form__button" type="submit">
+            <button class="button subscribe-form__button" type="submit">
               Підписатися
-              <span class="footer__form__button__icon">
+              <span class="subscribe-form__icon">
                 <svg height="24" width="24">
                   <use href="./images/svg/_sprite.svg#icon-send"></use>
                 </svg>

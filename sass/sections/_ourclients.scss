@@ -1,0 +1,28 @@
+.section__clients {
+  padding-top: 38px;
+}
+
+.clients-list {
+  margin-top: 50px;
+  display: flex;
+  gap: 30px;
+}
+
+.clients-list__link {
+  @include centerFlex;
+
+  color: var(--grey-icons-color);
+  border: 1px solid currentColor;
+  border-radius: 4px;
+  width: 170px;
+  height: 92px;
+  transition: color 250ms var(--bezier);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+
+.clients-list__icon {
+  fill: currentColor;
+}

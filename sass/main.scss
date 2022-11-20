@@ -1,0 +1,24 @@
+@import "./utils/normalize";
+@import "./utils/global";
+@import "./utils/variables";
+@import "./utils/mixins";
+@import "./utils/placeholders";
+@import "./utils/utility";
+
+@import "./components/logo";
+@import "./components/button";
+@import "./components/socials";
+@import "./components/subscribe";
+@import "./components/filters";
+@import "./components/orderservice";
+
+@import "./sections/header";
+@import "./sections/hero";
+@import "./sections/advantages";
+@import "./sections/whatwedo";
+@import "./sections/ourteam";
+@import "./sections/ourclients";
+@import "./sections/modalka";
+@import "./sections/footer";
+
+@import "./sections/portfolio";

@@ -1,0 +1,40 @@
+.section__our-team {
+  background: var(--button-filter-background-color);
+}
+
+.our-team__header {
+  margin-bottom: 50px;
+}
+
+.our-team {
+  @include centerFlex;
+  gap: 30px;
+}
+
+.our-team__member {
+  padding-bottom: 30px;
+  background: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  text-align: center;
+}
+
+.our-team__portrait {
+  margin-bottom: 30px;
+}
+
+.our-team__name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  margin-bottom: 10px;
+}
+
+.our-team__rank {
+  font-size: 16px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--main-grey-color);
+}
