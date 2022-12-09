@@ -612,6 +612,30 @@ button {
   justify-content: center;
 }
 
+.mobile-menu__button {
+  background-color: transparent;
+}
+.mobile-menu__button:focus, .mobile-menu__button:hover {
+  fill: blue;
+}
+@media (min-width: 768px) {
+  .mobile-menu__button {
+    display: none;
+  }
+}
+
+.mobile-menu__button .icon__close {
+  display: none;
+}
+
+.mobile-menu__button.is-open .icon__close {
+  display: block;
+}
+
+.mobile-menu__button.is-open .icon__open {
+  display: none;
+}
+
 .hero {
   padding-top: 200px;
   padding-bottom: 200px;

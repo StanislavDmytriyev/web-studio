@@ -21,6 +21,26 @@
           <a class="logo header__logo" href="./index.html" lang="en"
             >Web<span class="logo--dark">Studio</span></a
           >
+
+          <button
+            class="mobile-menu__button"
+            type="button"
+            data-menu-button
+            aria-expanded="false"
+            aria-controls="menu-container"
+          >
+            <svg width="40" height="40" aria-label="Mobile Menu toggle button">
+              <use
+                class="icon__close"
+                href="./images/svg/_sprite.svg#icon-mobile-close"
+              ></use>
+              <use
+                class="icon__open"
+                href="./images/svg/_sprite.svg#icon-mobile-open"
+              ></use>
+            </svg>
+          </button>
+
           <ul class="main-nav__list">
             <li class="current-page">
               <a class="main-nav__link" href="./index.html">Студія</a>
@@ -546,5 +566,6 @@
     </div>
     <script src="./scripts/header-size.js"></script>
     <script src="./scripts/modal.js"></script>
+    <script src="./scripts/mobile-menu.js"></script>
   </body>
 </html>

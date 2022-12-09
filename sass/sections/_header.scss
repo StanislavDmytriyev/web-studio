@@ -76,3 +76,26 @@
 .contacts-list__item {
   @include centerFlex;
 }
+
+.mobile-menu__button {
+  background-color: transparent;
+  &:focus,
+  &:hover {
+    fill: blue;
+  }
+  @media (min-width: 768px) {
+    display: none;
+  }
+}
+
+.mobile-menu__button .icon__close {
+  display: none;
+}
+
+.mobile-menu__button.is-open .icon__close {
+  display: block;
+}
+
+.mobile-menu__button.is-open .icon__open {
+  display: none;
+}
